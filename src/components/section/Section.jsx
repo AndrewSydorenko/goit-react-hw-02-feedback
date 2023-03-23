@@ -1,5 +1,7 @@
 import React from "react";
 import css from '../section/Section.module.css'
+import PropTypes from 'prop-types';
+
 
 
 export const Section = ({title, children}) => {
@@ -10,3 +12,8 @@ export const Section = ({title, children}) => {
     </section>
   );
 };
+
+Section.prototype = {
+  title: PropTypes.string,
+  children: PropTypes.element
+}

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Statistics } from "./statistics/Statistics";
 import { Section } from "./section/Section";
 import { FeedbackOptions } from "./statistics/feedbackOptions/FeedbackOptions";
+import { Notification } from "./statistics/Notification";
 
 class App extends Component {
 state = {
@@ -45,7 +46,7 @@ state = {
             total={this.countTotalFeedback()}
             positivePercentage={this.countPositiveFeedbackPercentage()}
         />
-      </Section> : null}
+      </Section> : <Notification message="There is no feedback" />}
       
     </>
   );
