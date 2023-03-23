@@ -4,10 +4,7 @@ import css from '../statistics/Statistics.module.css'
 export const Statistics = ({good, neutral, bad, total, positivePercentage}) => {
     
         return (
-            <div className={css.feedback}>
-                 <div>
-            </div>
-            <div className="stats">
+            <div className={css.feedback}>          
                     <ul>
                         <li className={css.stats__item}>Good: {good}</li>
                         <li className={css.stats__item}>Neutral: {neutral}</li>
@@ -16,7 +13,6 @@ export const Statistics = ({good, neutral, bad, total, positivePercentage}) => {
                         <li className={css.stats__item}>Positive feedback: {positivePercentage}%</li>
                     </ul>
             </div>
-           </div>
         ) 
      
 }
